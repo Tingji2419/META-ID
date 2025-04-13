@@ -464,10 +464,10 @@ def generate_metapath_id(data_path, dataset, metapath_cluster_method, metapath_c
             centroids_dict[f"<CT{center_label}>"] = centroids[d[1]]
 
     utils.save_pickle(
-        f'{data_path}/{dataset}/centroid_metapath_indexing_{metapath_cluster_method}_{metapath_cluster_num}.pkl',
+        f'{data_path}/{dataset}/centroid_metapath_indexing_{metapath_cluster_method}_{metapath_cluster_num}_ag.pkl',
         centroids_dict
     )
-    
+
     return asin2id
 
     
