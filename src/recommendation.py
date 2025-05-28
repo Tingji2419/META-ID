@@ -78,7 +78,7 @@ def main():
     elif args.item_indexing == 'collaborative':
         item_index_file = os.path.join(args.data_path, args.dataset, f'item_collaborative_indexing_{args.collaborative_token_size}_{args.collaborative_cluster}_{args.collaborative_last_token}.txt')
     elif args.item_indexing == 'metapath':
-        item_index_file = os.path.join(args.data_path, args.dataset, f'item_metapath_indexing_kmcos_100_leakage=True_ag.txt')
+        item_index_file = os.path.join(args.data_path, args.dataset, f'item_metapath_indexing_kmcos_100_ag.txt')
     else:
         raise NotImplementedError
         
